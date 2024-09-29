@@ -1,17 +1,18 @@
+import { useContext } from "react";
+import PostContext from "../../Context/post";
 import { Results, SearchPosts } from "../index";
-function Header({ posts, onClearPosts, searchQuery, setSearchQuery }) {
+
+function Header() {
+  const { handleClearPosts } = useContext(PostContext);
   return (
     <header>
       <h1>
         <span>⚛️</span>The Atomic Blog
       </h1>
       <div>
-        <Results posts={posts} />
-        <SearchPosts
-          searchQuery={searchQuery}
-          setSearchQuery={setSearchQuery}
-        />
-        <button onClick={onClearPosts}>Clear posts</button>
+        <Results />
+        <SearchPosts />
+        <button onClick={handleClearPosts}>Clear posts</button>
       </div>
     </header>
   );

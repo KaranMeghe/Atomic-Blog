@@ -1,8 +1,11 @@
+import { useContext } from "react";
+import PostContext from "../../../Context/post";
 import { List } from "../../index";
-function Posts({ posts }) {
+function Posts() {
+  const { searchedPosts } = useContext(PostContext);
   return (
     <section>
-      <List posts={posts} />
+      <List searchedPosts={searchedPosts} />
     </section>
   );
 }

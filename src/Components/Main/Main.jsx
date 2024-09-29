@@ -1,9 +1,9 @@
 import { Posts, FormAddPost } from "../index";
-function Main({ posts, onAddPost }) {
+function Main({ onAddPost }) {
   return (
     <main>
       <FormAddPost onAddPost={onAddPost} />
-      <Posts posts={posts} />
+      <Posts />
     </main>
   );
 }
