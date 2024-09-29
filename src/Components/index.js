@@ -7,6 +7,7 @@ import Posts from "./Main/Posts/Posts";
 import List from "./Main/Posts/Lists/List";
 import Archive from "./Archive/Archive";
 import Footer from "./Footer/Footer";
+import Button from "./Button/Button";
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   List,
   Archive,
   Footer,
+  Button,
 };

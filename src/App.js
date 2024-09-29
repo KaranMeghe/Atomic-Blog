@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { faker } from "@faker-js/faker";
-import { Header, Main, Archive, Footer } from "./Components";
+import { Header, Main, Archive, Footer, Button } from "./Components";
 
 function createRandomPost() {
   return {
@@ -22,12 +22,12 @@ function App() {
 
   return (
     <section>
-      <button
+      <Button
         onClick={() => setIsFakeDark((isFakeDark) => !isFakeDark)}
         className="btn-fake-dark-mode"
       >
         {isFakeDark ? "☀️" : "🌙"}
-      </button>
+      </Button>
 
       <Header />
       <Main />

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import PostContext from "../../Context/post";
-import { Results, SearchPosts } from "../index";
+import { Results, SearchPosts, Button } from "../index";
 
 function Header() {
   const { handleClearPosts } = useContext(PostContext);
@@ -12,7 +12,7 @@ function Header() {
       <div>
         <Results />
         <SearchPosts />
-        <button onClick={handleClearPosts}>Clear posts</button>
+        <Button onClick={handleClearPosts}>Clear posts</Button>
       </div>
     </header>
   );
